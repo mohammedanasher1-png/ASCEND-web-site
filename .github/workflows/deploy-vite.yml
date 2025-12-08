@@ -24,7 +24,7 @@ jobs:
           node-version: 20
 
       - name: Install dependencies and build project
-        run: npm ci && npm run build
+        run: npm install && npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
