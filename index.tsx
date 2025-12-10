@@ -5,14 +5,14 @@ import { HashRouter } from 'react-router-dom';
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
-  throw new Error("Could not find root element to mount to");
+  throw new Error("Could not find root element to mount to");
 }
 
 const root = ReactDOM.createRoot(rootElement);
 root.render(
-  <React.StrictMode>
-    <HashRouter>
-      <App />
-    </HashRouter>
-  </React.StrictMode>
+  <React.StrictMode>
+    <HashRouter basename="/ASCEND-web-site"> // 👈 اضف هذه الخاصية
+      <App />
+    </HashRouter>
+  </React.StrictMode>
 );
